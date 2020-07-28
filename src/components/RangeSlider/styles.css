@@ -1,0 +1,12 @@
+.slide-container {
+  width: 100%;
+  display: flex;
+}
+
+.slide-container .title {
+  min-width: 80px;
+}
+
+.slide-container .slider {
+  width: 100%;
+}

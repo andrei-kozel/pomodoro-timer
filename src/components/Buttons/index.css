@@ -1,0 +1,17 @@
+.settings-btn-container {
+  margin: 15px;
+}
+
+.settings-btn {
+  height: 40px;
+  width: 40px;
+  color: white;
+  opacity: 0.3;
+  transition: all 0.3s ease-in-out;
+}
+
+.settings-btn:hover {
+  opacity: 1;
+  cursor: pointer;
+  transform: rotate(40deg);
+}
