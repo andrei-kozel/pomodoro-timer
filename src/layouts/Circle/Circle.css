@@ -67,44 +67,6 @@
   z-index: 100;
 }
 
-.button-container {
-  height: 70px;
-  width: 70px;
-  border: 2px solid #f44c4e;
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.button {
-  height: 55px;
-  width: 55px;
-  border-radius: 100%;
-  border: none;
-  background-color: #f44c4e;
-  cursor: pointer;
-  z-index: 100;
-  outline: none;
-  transition: all 0.2s ease-in-out;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.button:hover {
-  height: 72px;
-  width: 72px;
-}
-
-.icon {
-  margin: 0;
-  padding: 0;
-  color: #32323e;
-  height: 30px;
-  width: 30px;
-}
-
 .settings {
   position: absolute;
   bottom: -50px;

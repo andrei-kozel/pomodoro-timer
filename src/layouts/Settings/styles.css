@@ -1,0 +1,32 @@
+.settings-button-container {
+  margin: auto;
+  margin-top: 20px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 8px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #32323e;
+}
+
+.reset-settings-button {
+  background-color: #41b883;
+  transition: all 0.2s ease-in-out;
+}
+
+.reset-settings-button:hover {
+  box-shadow: 3px 3px 4px #32323e;
+  transform: translateY(-2px);
+}
+
+.reset-settings-button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}

@@ -1,5 +1,6 @@
 import React from 'react'
 import RangeSlider from '../../components/RangeSlider/RangeSlider'
+import './styles.css'
 
 const Settings = (props) => {
   return (
@@ -21,7 +22,11 @@ const Settings = (props) => {
         type="REST"
         changed={props.changed}
       />
-      <button onClick={props.close}>Ok</button>
+      <div className="settings-button-container">
+        <button className="btn reset-settings-button" onClick={props.close}>
+          Close
+        </button>
+      </div>
     </div>
   )
 }

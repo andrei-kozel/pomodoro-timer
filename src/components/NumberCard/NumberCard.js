@@ -8,6 +8,9 @@ const NumberCard = (props) => {
     if (value === '') {
       return '00'
     }
+    if (value >= 60) {
+      return '59'
+    }
     return value
   }
 

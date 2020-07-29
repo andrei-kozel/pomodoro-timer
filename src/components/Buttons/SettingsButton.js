@@ -1,6 +1,6 @@
 import React from 'react'
 import { FiSettings } from 'react-icons/fi'
-import './index.css'
+import './styles.css'
 
 const SettingsButton = (props) => {
   return (

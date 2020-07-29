@@ -44,10 +44,12 @@ const Circle = () => {
   useInterval(() => setSessionTime(sessionTime - 1000), isRunning ? 1000 : null)
 
   useEffect(() => {
-    setSessionTime(
-      (parseInt(settings.minutes) * 60 + parseInt(settings.seconds)) * 1000
-    )
-    setRestTime(parseInt(settings.restTime) * 60 * 1000)
+    if (settings.minutes !== '' && settings.seconds !== '') {
+      setSessionTime(
+        (parseInt(settings.minutes) * 60 + parseInt(settings.seconds)) * 1000
+      )
+      setRestTime(parseInt(settings.restTime) * 60 * 1000)
+    }
   }, [settings.minutes, settings.restTime, settings.seconds])
 
   useEffect(() => {
@@ -75,7 +77,7 @@ const Circle = () => {
   return (
     <React.Fragment>
       {isSettingsOpen ? (
-        <Modal>
+        <Modal show={isSettingsOpen} close={() => setIsSettingsOpen(false)}>
           <Settings
             settings={settings}
             changed={handleChangeValue}
@@ -109,6 +111,7 @@ const Circle = () => {
           playButton={() => setIsRunning(true)}
           pauseButton={() => setIsRunning(false)}
           isRunning={isRunning}
+          mode={mode}
         />
         <div className="settings">
           <SettingsButton openSettings={openModal} />

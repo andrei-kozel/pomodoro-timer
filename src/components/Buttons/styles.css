@@ -1,0 +1,69 @@
+.settings-btn-container {
+  margin: 15px;
+}
+
+.settings-btn {
+  height: 40px;
+  width: 40px;
+  color: white;
+  opacity: 0.3;
+  transition: all 0.3s ease-in-out;
+}
+
+.settings-btn:hover {
+  opacity: 1;
+  cursor: pointer;
+  transform: rotate(40deg);
+}
+
+.button-container {
+  height: 70px;
+  width: 70px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  height: 55px;
+  width: 55px;
+  border-radius: 100%;
+  border: none;
+  cursor: pointer;
+  z-index: 100;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container-red {
+  border: 2px solid #f44c4e;
+}
+
+.button-red {
+  background-color: #f44c4e;
+}
+
+.button-container-green {
+  border: 2px solid #41b883;
+}
+
+.button-green {
+  background-color: #41b883;
+}
+
+.button:hover {
+  height: 72px;
+  width: 72px;
+}
+
+.icon {
+  margin: 0;
+  padding: 0;
+  color: #32323e;
+  height: 30px;
+  width: 30px;
+}

@@ -13,7 +13,7 @@ const RangeSlider = (props) => {
         className="slider"
         onChange={(e) => props.changed(props.type, e.target.value)}
       />
-      {props.value}
+      <p>{props.value} min</p>
     </div>
   )
 }
