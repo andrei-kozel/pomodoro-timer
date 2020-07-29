@@ -4,7 +4,7 @@ import moment from 'moment'
 
 import { useInterval } from '../../hooks/useInterval'
 
-import NumberCard from '../../components/NumberCard/NumberCard'
+import Timer from '../../components/Timer/Timer'
 import PlayPauseButton from '../../components/Buttons/PlayPauseButton'
 import SettingsButton from '../../components/Buttons/SettingsButton'
 import Modal from '../../components/Modal/Modal'
@@ -90,23 +90,14 @@ const Circle = () => {
         <div className="info-container">
           <div className="info">i</div>
         </div>
-        <div className="timer">
-          <NumberCard
-            type="MINUTES"
-            value={settings.minutes}
-            changed={handleChangeValue}
-            text={minutes}
-            editable={isRunning}
-          />
-          <span>:</span>
-          <NumberCard
-            type="SECONDS"
-            value={settings.seconds}
-            changed={handleChangeValue}
-            text={seconds}
-            editable={isRunning}
-          />
-        </div>
+        <Timer
+          minutesSettings={settings.minutes}
+          secondsSettings={settings.seconds}
+          changed={handleChangeValue}
+          minutes={minutes}
+          seconds={seconds}
+          isRunning={isRunning}
+        />
         <PlayPauseButton
           playButton={() => setIsRunning(true)}
           pauseButton={() => setIsRunning(false)}

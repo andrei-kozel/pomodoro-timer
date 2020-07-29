@@ -58,15 +58,6 @@
   opacity: 1;
 }
 
-.timer {
-  max-width: 300px;
-  text-align: center;
-  color: white;
-  text-shadow: 2px 2px aqua;
-  display: flex;
-  z-index: 100;
-}
-
 .settings {
   position: absolute;
   bottom: -50px;
