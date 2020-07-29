@@ -8,7 +8,7 @@ import Timer from '../../components/Timer/Timer'
 import PlayPauseButton from '../../components/Buttons/PlayPauseButton'
 import SettingsButton from '../../components/Buttons/SettingsButton'
 import Modal from '../../components/Modal/Modal'
-import Settings from '../Settings/Settings'
+import Settings from '../../components/Settings/Settings'
 
 const Circle = () => {
   const [settings, setSettings] = useState({
